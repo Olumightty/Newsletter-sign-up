@@ -1,0 +1,118 @@
+html{
+    background-color: hsl(235, 18%, 26%);
+  }
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+  .flex-row{
+    display: flex;
+    gap: 40px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border: solid white;
+    border-radius: 20px;
+  }
+
+  h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+  }
+
+  label{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: hsl(234, 29%, 20%);
+  }
+
+  .flex-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 350px;
+    background-color: white;
+    
+  }
+
+  #main{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(235, 18%, 26%);
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+  button{
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border: solid hsl(234, 29%, 20%);
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  a{
+    color: white;
+    text-decoration: 0;
+  }
+
+  input{
+    width: 340px;
+    height: 30px;
+    border: 1px solid hsl(231, 7%, 60%);
+    opacity: 30%;
+    border-radius: 10px;
+  }
+
+  li{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+
+  .alive{
+    border: 1px solid black;
+    opacity: 100%;
+    
+  }
+
+  .hover{
+    border: 0;
+    box-shadow: 5px 5px 5px grey;
+    background: linear-gradient(300deg, orange, orange, orange, hsl(4, 100%, 67%), hsl(4, 100%, 67%), hsl(4, 100%, 67%));
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    
+  }
+
+
+  .second-flex{
+    background-color: white;
+    width: 300px;
+    padding: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    
+  }
+
+  .btn{
+    width: 300px;
+    margin-top: 10px;
+  }
+
+  .click{
+    opacity: 30%;
+  }
+
+
+  .red{
+    border-color: red;
+
+  }

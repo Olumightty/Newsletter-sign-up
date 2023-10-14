@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Success</title>
+</head>
+<body>
+    <!-- Success message start -->
+  <div id="main" class="sha">
+    <div class="second-flex">
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg>
+
+      <h1>Thanks for Subscribing!</h1>
+
+      <p>A confirmation email has been sent to <span>ash@loremcompany.com. </span>
+      Please open it and click the button inside to confirm your subscription.</p>
+
+      <button class="btn">Dismiss message</button>
+    </div>
+    
+  </div>
+
+
+  <script>
+    var result = window.location.search
+    var params = new URLSearchParams(result)
+    var content = params.get("mail")
+    
+    document.querySelector("span").innerHTML = content
+
+    document.querySelector("button").addEventListener("mouseover", function(){
+      this.classList.add("hover");
+    });
+
+    document.querySelector("button").addEventListener("mouseout", function(){
+      this.classList.remove("hover");
+    });
+
+    document.querySelector("button").addEventListener("click", function(){
+   
+      this.classList.add("click");
+
+      setTimeout(function(){document.querySelector("button").classList.remove("click")}, 100);
+      setTimeout(function(){document.location = "./index.html"}, 200);
+    });
+
+  </script>
+  
+
+  <!-- Success message end -->
+</body>
+</html>
